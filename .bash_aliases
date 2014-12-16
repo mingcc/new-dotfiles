@@ -12,6 +12,7 @@ alias lsd='ls -l | grep "^d"'  # only directories as a list
 # Personal shortcuts
 alias v="vim"
 alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; done'
+alias w="/usr/bin/which"
 
 
 # Git related shortcuts
