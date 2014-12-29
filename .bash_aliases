@@ -13,6 +13,10 @@ alias lsd='ls -l | grep "^d"'  # only directories as a list
 alias v="vim"
 alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; done'
 alias w="/usr/bin/which"
+alias r="source ~/.zshrc"
+alias s="apt-cache search"
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+
 
 
 # Git related shortcuts
@@ -31,3 +35,6 @@ alias s="sudo apt-cache search"
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+
+alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
