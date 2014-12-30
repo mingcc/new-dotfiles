@@ -129,8 +129,8 @@ set runtimepath+=~/.vim/ulti_snippets
 let g:UltiSnipsSnippetsDir = "~/.vim/ulti_snippets/"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'ulti_snippets']
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " Fixing the copy & paste madness
 " ================================
@@ -160,3 +160,7 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
 let g:user_emmet_leader_key = '<c-y>'
+
+
+let g:django_projects = '~/project'
+let g:django_activate_nerdtree = 1 
