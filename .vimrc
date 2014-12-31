@@ -164,3 +164,16 @@ let g:user_emmet_leader_key = '<c-y>'
 
 let g:django_projects = '~/project'
 let g:django_activate_nerdtree = 1 
+
+
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+let g:airline_powerline_fonts = 1
+
+
+let g:airline#extensions#ctrlp#color_template = 'insert'
+let g:airline#extensions#ctrlp#color_template = 'normal'
+let g:airline#extensions#ctrlp#color_template = 'visual'
+let g:airline#extensions#ctrlp#color_template = 'replace'
+
+let g:airline#extensions#ctrlp#show_adjacent_modes = 1
