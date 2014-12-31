@@ -77,7 +77,7 @@ call pathogen#helptags()
 " settings for powerline
 " cd ~/.vim/bundle
 " git clone https://github.com/Lokaltog/vim-powerline
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 " let g:Powerline_theme = 'solarized256'
 set laststatus=2
 
@@ -143,6 +143,10 @@ let g:SuperTabDefaultCompletionType = "context"
 " Syntastic
 " =========
 let jshint2_save = 1
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+
+
 
 " Settings for jedi-vim
 " =====================
@@ -162,18 +166,4 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 let g:user_emmet_leader_key = '<c-y>'
 
 
-let g:django_projects = '~/project'
-let g:django_activate_nerdtree = 1 
 
-
-" let g:airline_left_sep=''
-" let g:airline_right_sep=''
-let g:airline_powerline_fonts = 1
-
-
-let g:airline#extensions#ctrlp#color_template = 'insert'
-let g:airline#extensions#ctrlp#color_template = 'normal'
-let g:airline#extensions#ctrlp#color_template = 'visual'
-let g:airline#extensions#ctrlp#color_template = 'replace'
-
-let g:airline#extensions#ctrlp#show_adjacent_modes = 1
