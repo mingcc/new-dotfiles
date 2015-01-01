@@ -142,10 +142,9 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " Syntastic
 " =========
-let jshint2_save = 1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
-
+let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 
 
 " Settings for jedi-vim
