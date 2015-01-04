@@ -165,4 +165,6 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 let g:user_emmet_leader_key = '<c-y>'
 
 
-
+" automatically adding executable bit to bash files
+" =================================================
+au BufWritePost *.sh silent !chmod +x <afile> 

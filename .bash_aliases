@@ -15,7 +15,7 @@ alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; do
 alias w="/usr/bin/which"
 alias r="source ~/.zshrc"
 alias s="apt-cache search"
-alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+alias vimconfig="vim ~/.vimrc"
 
 
 
@@ -27,6 +27,7 @@ alias gps="git push"
 alias gpl="git pull"
 alias gc="git commit"
 alias gl="git lg"
+alias gss="git status -s | less"
 
 # Apt tools related shortcuts
 alias s="sudo apt-cache search"
