@@ -1,13 +1,16 @@
-set encoding=utf-8
+
+" Write to file invokes sudo
+command W w !sudo tee % > /dev/null
+
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " General 
 set bg=dark
+set encoding=utf-8
 set tags=./tags
 set mouse=a              
 set bs=2                
@@ -32,9 +35,6 @@ noremap <Leader>e :q<CR> " Quick current window
 noremap <Leader>er :q!<CR> 
 noremap <Leader>E :qa!<CR>  " Quick all windows
 
-" easier moving between tabs
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
 
 " don't use tabs but spaces
 set tabstop=4
