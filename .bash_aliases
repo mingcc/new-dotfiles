@@ -16,6 +16,8 @@ alias w="/usr/bin/which"
 alias r="source ~/.zshrc"
 alias s="apt-cache search"
 alias vimconfig="vim ~/.vimrc"
+alias p="python"
+alias p3="python3.4"
 
 
 

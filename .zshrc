@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.bash_aliases
 
@@ -95,4 +95,4 @@ setopt hist_reduce_blanks # Remove extra blanks from each command line being add
 setopt hist_verify # don't execute, just expand history
 setopt share_history # imports new commands and appends typed commands to history
 
-
+setopt NO_FLOW_CONTROL
