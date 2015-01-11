@@ -14,7 +14,6 @@ alias v="vim"
 alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; done'
 alias w="/usr/bin/which"
 alias r="source ~/.zshrc"
-alias s="apt-cache search"
 alias vimconfig="vim ~/.vimrc"
 alias p="python"
 alias p3="python3.4"
@@ -38,12 +37,7 @@ fi
 
 # Git related shortcuts
 alias g="git"
-alias ga="git add -A ."
-alias gst="git st"
-alias gps="git push"
-alias gpl="git pull"
 alias gc="git commit"
-alias gl="git lg"
 alias gss="git status -s | less"
 
 # Apt tools related shortcuts

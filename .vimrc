@@ -96,7 +96,6 @@ let g:ctrlp_extensions = ['rtscript']
 
 " show line numbers and length
 set nu
-
 set t_Co =256
 set tw=79 " width of document  (used by gd)
 set nowrap  " don't automatically wrap on load
