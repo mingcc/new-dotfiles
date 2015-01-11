@@ -18,6 +18,21 @@ alias s="apt-cache search"
 alias vimconfig="vim ~/.vimrc"
 alias p="python"
 alias p3="python3.4"
+alias tmuxconfig="vim ~/.tmux.conf"
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+alias ports='netstat -tulanp'
+
+# Without sudo
+if [ $UID -ne 0 ]; then
+    alias reboot='sudo reboot'
+    
+    alias dpkg="sudo dpkg"
+    alias apt-get="sudo apt-get"
+    alias update='sudo apt-get upgrade'
+fi
+
 
 
 

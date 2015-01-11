@@ -1,23 +1,26 @@
 
 " Write to file invokes sudo
+" ===========================
 command W w !sudo tee % > /dev/null
 
 
 " Automatic reloading of .vimrc
+" ==============================
 autocmd! bufwritepost .vimrc source %
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " General 
+" =========
 set bg=dark
 set encoding=utf-8
 set tags=./tags
 set mouse=a              
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
-" highlight Pmenu ctermbg=238 gui=bold
 
 " better copy & paste
+" ====================
 set pastetoggle=<F2>
 set clipboard=unnamed  " Operation such as yy,D and P work with the system clipboard
 
