@@ -1,3 +1,5 @@
+" added from github website
+vmap <c-c> "+y
 
 " Write to file invokes sudo
 command W w !sudo tee % > /dev/null
