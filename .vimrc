@@ -83,7 +83,6 @@ call pathogen#helptags()
 " cd ~/.vim/bundle
 " git clone https://github.com/Lokaltog/vim-powerline
 let g:Powerline_symbols = 'fancy'
-" let g:Powerline_theme = 'solarized256'
 set laststatus=2
 
 " settings for ctrlp
