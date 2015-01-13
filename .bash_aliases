@@ -39,6 +39,7 @@ fi
 alias g="git"
 alias gc="git commit"
 alias gss="git status -s | less"
+alias gho='$(git remote -v 2> /dev/null | grep github | sed -e "s/.*git\:\/\/\([a-z]\.\)*/\1/" -e "s/\.git$//g" -e "s/.*@\(.*\)$/\1/g" | tr ":" "/" | tr -d "\011" | sed -e "s/^/open http:\/\//g")'
 
 # Apt tools related shortcuts
 alias s="sudo apt-cache search"

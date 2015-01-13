@@ -1,5 +1,5 @@
 " added from github website
-vmap <c-c> "+y
+" vmap <c-c> "+y
 
 " Write to file invokes sudo
 " ===========================
