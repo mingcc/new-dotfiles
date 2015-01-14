@@ -105,8 +105,6 @@ set colorcolumn=80
 
 
 
-" open $MYVIMRC file
-:nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 
 inoremap jk <esc>
 
