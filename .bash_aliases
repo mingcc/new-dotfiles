@@ -8,6 +8,7 @@ alias l='ls -CF'  # directories and files in columns
 alias la='ls -A'  # directories and files incl. hidden in columns
 alias ll='ls -ahlF'  # everything with extra info as a list
 alias lsd='ls -l | grep "^d"'  # only directories as a list
+alias ls='ls --color=auto'
 
 # Personal shortcuts
 alias v="vim"
@@ -21,7 +22,6 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
-alias ports='netstat -tulanp'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 
 # Without sudo

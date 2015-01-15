@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history-substring-search git pip autojump npm extract)
+plugins=(history-substring-search git autojump extract)
 
 # User configuration
 
@@ -82,3 +82,6 @@ source $HOME/.bash_aliases
 
 export TERM=xterm-256color
 export EDITOR='vim'
+
+# export GREP_OPTIONS='--color=auto'
+# export GREP_COLOR='1;32'
