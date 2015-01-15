@@ -79,6 +79,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.bash_aliases
+source $HOME/.bash_functions
 
 export TERM=xterm-256color
 export EDITOR='vim'

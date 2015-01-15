@@ -21,7 +21,6 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
-alias ports='netstat -tulanp'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 
 # Without sudo
