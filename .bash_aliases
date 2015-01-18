@@ -20,9 +20,9 @@ alias p="python"
 alias p3="python3.4"
 alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
-alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
+alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
 
 # Without sudo
 if [ $UID -ne 0 ]; then

@@ -77,12 +77,21 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 source $HOME/.bash_aliases
-source $HOME/.bash_functions
 
 export TERM=xterm-256color
 export EDITOR='vim'
+export HISTFILE=~/.histfile
 
 # export GREP_OPTIONS='--color=auto'
 # export GREP_COLOR='1;32'
+
+ANDROID_HOME="/opt/android-sdk-linux/"
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+mcd () {
+    mkdir "$@" && cd "$@"
+}
+
+
