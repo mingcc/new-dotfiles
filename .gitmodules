@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/vim-solarized-powerline"]
+	path = .vim/bundle/vim-solarized-powerline
+	url = https://github.com/stephenmckinney/vim-solarized-powerline

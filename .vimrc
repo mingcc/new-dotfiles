@@ -3,7 +3,6 @@
 
 " Write to file invokes sudo
 " ===========================
-command W w !sudo tee % > /dev/null
 
 
 " Automatic reloading of .vimrc
@@ -20,6 +19,7 @@ set tags=./tags
 set mouse=a              
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
+
 
 " better copy & paste
 " ====================
@@ -125,21 +125,16 @@ let delimitMate_expand_cr = 1
 
 " UltiSnips
 " =========
-set runtimepath+=~/.vim/bundle/UltiSnips
-set runtimepath+=~/.vim/ulti_snippets
-let g:UltiSnipsSnippetsDir = "~/.vim/ulti_snippets/"
-let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'ulti_snippets']
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Fixing the copy & paste madness
 " ================================
-vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
-nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
-imap <C-v> <Esc><C-v>a
+" vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+" nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+" imap <C-v> <Esc><C-v>a
 
-let g:SuperTabDefaultCompletionType = "context"
 
 " Syntastic
 " =========
@@ -169,3 +164,16 @@ let g:user_emmet_leader_key = '<c-y>'
 " automatically adding executable bit to bash files
 " =================================================
 au BufWritePost *.sh silent !chmod +x <afile> 
+
+
+let g:SuperTabDefaultCompletionType = "context"
+
+
+" Movement
+" =========
+" bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
