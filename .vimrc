@@ -1,5 +1,5 @@
 " added from github website
-" vmap <c-c> "+y
+vmap <c-c> "+y
 
 " Write to file invokes sudo
 " ===========================
@@ -91,7 +91,6 @@ set laststatus=2
 "let g:ctrip_max_height = 30
 "Set the directory to store the cache files: 
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
-let g:ctrlp_extensions = ['rtscript']
 
 
 
@@ -101,12 +100,8 @@ set t_Co =256
 set tw=79 " width of document  (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't actomatically wrap text when typing
-set colorcolumn=80
+highlight ColorColumn ctermbg=233
 
-
-
-
-inoremap jk <esc>
 
 
 
@@ -125,6 +120,9 @@ let delimitMate_expand_cr = 1
 
 " UltiSnips
 " =========
+set runtimepath+=~/.vim/ulti_snippets
+let g:UltiSnipsSnippetsDir = "~/.vim/ulti_snippets/"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'ulti_snippets']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
@@ -146,7 +144,7 @@ let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 " Settings for jedi-vim
 " =====================
 let g:jedi#usages_command = "<leader>n"
-let g:jedi#popup_on_dot = 0
+let g:jedi#popup_on_dot = 1
 let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
@@ -177,3 +175,4 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+:map gf :edit <cfile><CR>
