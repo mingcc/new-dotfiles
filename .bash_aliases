@@ -22,12 +22,11 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
-alias ffcurl="curl -H \"User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)\""
+alias h='history'
 
 # Without sudo
 if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
-    
     alias dpkg="sudo dpkg"
     alias apt-get="sudo apt-get"
     alias update='sudo apt-get upgrade'

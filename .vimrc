@@ -53,7 +53,7 @@ vnoremap <Leader>s :sort<CR>
 " easier moving of code blocks
 vnoremap < <gv 
 vnoremap > >gv
-map <Leader>a ggVG  " select all
+map <c-a> ggVG  " select all
 
 " filetype
 filetype off 
