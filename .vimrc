@@ -101,6 +101,8 @@ set tw=79 " width of document  (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't actomatically wrap text when typing
 highlight ColorColumn ctermbg=233
+highlight PmenuSel ctermbg=15 guibg=white
+
 
 
 
