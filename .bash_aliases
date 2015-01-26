@@ -22,6 +22,7 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
+alias subnet='sudo nmap -sP 192.168.1.0/24'
 alias h='history'
 
 # Without sudo
@@ -31,8 +32,6 @@ if [ $UID -ne 0 ]; then
     alias apt-get="sudo apt-get"
     alias update='sudo apt-get upgrade'
 fi
-
-
 
 
 # Git related shortcuts
