@@ -31,6 +31,7 @@ if [ $UID -ne 0 ]; then
     alias dpkg="sudo dpkg"
     alias apt-get="sudo apt-get"
     alias update='sudo apt-get upgrade'
+    alias pip='sudo pip'
 fi
 
 

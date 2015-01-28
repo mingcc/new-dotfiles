@@ -178,3 +178,5 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 :map gf :edit <cfile><CR>
+
+:nnoremap <F5> :!ctags -R<CR>
