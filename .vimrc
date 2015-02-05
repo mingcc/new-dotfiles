@@ -148,7 +148,7 @@ let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 let g:jedi#usages_command = "<leader>n"
 let g:jedi#popup_on_dot = 1
 let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+
 
 
 
@@ -177,6 +177,11 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-:map gf :edit <cfile><CR>
+map gf :edit <cfile><CR>
 
-:nnoremap <F5> :!ctags -R<CR>
+" easier to move around in insert mode
+inoremap <c-h> <left>
+inoremap <c-l> <right>
+inoremap <c-k> <up>
+inoremap <c-j> <down>
+
