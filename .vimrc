@@ -1,9 +1,6 @@
 " added from github website
 vmap <c-c> "+y
 
-" Write to file invokes sudo
-" ===========================
-
 
 " Automatic reloading of .vimrc
 " ==============================
@@ -185,3 +182,8 @@ inoremap <c-l> <right>
 inoremap <c-k> <up>
 inoremap <c-j> <down>
 
+"movement keys for buffers
+map <Leader>, <esc>:bprevious<CR>
+map <Leader>. <esc>:bnext<CR>
+
+nnoremap <Space> @a
