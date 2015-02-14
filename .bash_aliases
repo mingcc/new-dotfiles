@@ -22,6 +22,7 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
+alias htmlclean='find . -name "index.html+" -exec ls {} \;'
 alias subnet='sudo nmap -sP 192.168.1.0/24'
 alias h='history'
 
@@ -32,6 +33,7 @@ if [ $UID -ne 0 ]; then
     alias apt-get="sudo apt-get"
     alias update='sudo apt-get upgrade'
     alias pip='sudo pip'
+    alias s="sudo apt-cache search"
 fi
 
 
@@ -40,9 +42,6 @@ alias g="git"
 alias gc="git commit"
 alias gss="git status -s | less"
 
-# Apt tools related shortcuts
-alias s="sudo apt-cache search"
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -50,3 +49,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 
 alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
+

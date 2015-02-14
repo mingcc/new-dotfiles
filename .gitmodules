@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "/home/jason/.oh-my-zsh"]
+	path = /home/jason/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
