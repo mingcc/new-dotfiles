@@ -22,7 +22,6 @@ alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
-alias htmlclean='find . -name "index.html+" -exec ls {} \;'
 alias subnet='sudo nmap -sP 192.168.1.0/24'
 alias h='history'
 
@@ -50,4 +49,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 
-alias networkcondition='wget http://www.google.com -q | echo "network connected"'
+alias networkstatus='wget http://www.google.com -q | echo "network connected"'
+
+
+alias currentip="wget -O- checkip.dyndns.org 2>&1 | grep Current"
