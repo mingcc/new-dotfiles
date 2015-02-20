@@ -16,6 +16,7 @@ set tags=./tags
 set mouse=a              
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
+set autoread
 
 
 " better copy & paste
@@ -179,11 +180,25 @@ map gf :edit <cfile><CR>
 " easier to move around in insert mode
 inoremap <c-h> <left>
 inoremap <c-l> <right>
-inoremap <c-k> <up>
-inoremap <c-j> <down>
 
 "movement keys for buffers
 map <Leader>, <esc>:bprevious<CR>
 map <Leader>. <esc>:bnext<CR>
 
-nnoremap <Space> @a
+" found here: http://stackoverflow.com/a/2170800/70778
+function! OmniPopup(action)
+    if pumvisible()
+        if a:action == 'j'
+            return "\<C-N>"
+        elseif a:action == 'k'
+            return "\<C-P>"
+        endif
+    endif
+    return a:action
+endfunction
+inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
+inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
+
+
+set completeopt=longest,menuone
+inoremap <c-space> <C-x><C-o>
