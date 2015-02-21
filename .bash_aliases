@@ -49,7 +49,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 
-alias networkstatus='wget http://www.google.com -q | echo "network connected"'
+## work in progress
 
-
+alias emptydirs="find . -empty -type d | wc -l"
 alias currentip="wget -O- checkip.dyndns.org 2>&1 | grep Current"
