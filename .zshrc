@@ -121,3 +121,13 @@ fkill() {
   ps -ef | sed 1d | fzf -m | awk '{print $2}' | xargs kill -${1:-9}
 }
 
+exip () {
+    # gather external ip address
+    echo -n "Current External IP: "
+    curl -s -m 5 http://myip.dk | grep "ha4" | sed -e 's/.*ha4">//g' -e 's/<\/span>.*//g'
+}
+
+ips () {
+    # determine local IP address
+    ifconfig | grep "inet " | awk '{ print $2 }'
+}
