@@ -17,6 +17,7 @@ set mouse=a
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread
+set cursorline
 
 
 " better copy & paste
