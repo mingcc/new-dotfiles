@@ -8,3 +8,5 @@ if [ ! -e ~/.oh-my-zsh ]; then
 fi
 
 apt-get install tmux vim autojump curl ibus-mozc python-pip
+
+pip install jedi virtualenvwrapper
