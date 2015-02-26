@@ -7,4 +7,4 @@ if [ ! -e ~/.oh-my-zsh ]; then
     chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc 
+apt-get install tmux vim autojump curl ibus-mozc python-pip
