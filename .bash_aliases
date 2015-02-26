@@ -16,24 +16,15 @@ alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; do
 alias w="/usr/bin/which"
 alias r="source ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
-alias p="python"
-alias p3="python3.4"
+alias gitconfig="vim ~/.gitconfig"
 alias tmuxconfig="vim ~/.tmux.conf"
 alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 alias subnet='sudo nmap -sP 192.168.1.0/24'
 alias h='history'
+alias sv='sudo /usr/bin/vim'
 
-# Without sudo
-if [ $UID -ne 0 ]; then
-    alias reboot='sudo reboot'
-    alias dpkg="sudo dpkg"
-    alias apt-get="sudo apt-get"
-    alias update='sudo apt-get upgrade'
-    alias pip='sudo pip'
-    alias s="sudo apt-cache search"
-fi
 
 
 # Git related shortcuts
