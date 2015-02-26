@@ -121,8 +121,8 @@ let delimitMate_expand_cr = 1
 " UltiSnips
 " =========
 " set runtimepath+=~/.vim/ulti_snippets
-" let g:UltiSnipsSnippetsDir = "~/.vim/ulti_snippets/"
-" let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'ulti_snippets']
+let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
