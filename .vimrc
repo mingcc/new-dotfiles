@@ -7,12 +7,12 @@ vmap <c-c> "+y
 autocmd! bufwritepost .vimrc source %
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType python nnoremap <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " General 
 " =========
 set bg=dark
 set encoding=utf-8
-set tags=./tags
 set mouse=a              
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
@@ -46,8 +46,6 @@ set softtabstop=4     "tabs key indent by four spaces
 set shiftwidth=4
 set shiftround
 set expandtab         "convert tabs to whitespace
-" map sort function to a key
-vnoremap <Leader>s :sort<CR>
 
 " easier moving of code blocks
 vnoremap < <gv 
@@ -157,7 +155,6 @@ let g:jedi#popup_select_first = 0
 " autocmd BufRead * normal zM
 
 
-let g:user_emmet_leader_key = '<c-y>'
 
 
 " automatically adding executable bit to bash files
@@ -182,24 +179,16 @@ map gf :edit <cfile><CR>
 inoremap <c-h> <left>
 inoremap <c-l> <right>
 
-"movement keys for buffers
-map <Leader>, <esc>:bprevious<CR>
-map <Leader>. <esc>:bnext<CR>
 
-" found here: http://stackoverflow.com/a/2170800/70778
-function! OmniPopup(action)
-    if pumvisible()
-        if a:action == 'j'
-            return "\<C-N>"
-        elseif a:action == 'k'
-            return "\<C-P>"
-        endif
-    endif
-    return a:action
-endfunction
-inoremap <silent><C-j> <C-R>=OmniPopup('j')<CR>
-inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 
 
 set completeopt=longest,menuone
-inoremap <c-space> <C-x><C-o>
+
+
+
+
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+
+map <Leader>, <esc>:tabprevious<CR>
+map <Leader>. <esc>:tabnext<CR>

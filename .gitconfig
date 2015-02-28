@@ -11,3 +11,4 @@
     ci = commit
 [core]
 	excludesfile = /home/jason/.gitignore
+	pager = less -r

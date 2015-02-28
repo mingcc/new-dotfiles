@@ -29,8 +29,6 @@ alias sv='sudo /usr/bin/vim'
 
 # Git related shortcuts
 alias g="git"
-alias gc="git commit"
-alias gss="git status -s | less"
 
 
 # Add an "alert" alias for long running commands.  Use like so:
