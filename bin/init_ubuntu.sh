@@ -7,9 +7,9 @@ if [ ! -e ~/.oh-my-zsh ]; then
     chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc python-pip ack-grep
+apt-get install tmux vim autojump curl ibus-mozc python-pip ack-grep exuberant-ctags
 
-pip install jedi virtualenvwrapper
+pip install jedi virtualenvwrapper beautifulsoup4
 
 git clone https://github.com/junegunn/fzf ~/.fzf
 https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
