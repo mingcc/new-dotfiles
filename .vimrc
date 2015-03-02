@@ -1,7 +1,3 @@
-" added from github website
-vmap <c-c> "+y
-
-
 " Automatic reloading of .vimrc
 " ==============================
 autocmd! bufwritepost .vimrc source %
@@ -79,15 +75,12 @@ call pathogen#helptags()
 " settings for powerline
 " cd ~/.vim/bundle
 " git clone https://github.com/Lokaltog/vim-powerline
-let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
 " settings for ctrlp
 " cd ~/.vim/bundle
 " git clone https://github.com/kien/ctrlp.vim
 "let g:ctrip_max_height = 30
-"Set the directory to store the cache files: 
-let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 
 
 
