@@ -185,3 +185,8 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 
 map <Leader>, <esc>:tabprevious<CR>
 map <Leader>. <esc>:tabnext<CR>
+
+" Bash like keys for the command line
+cnoremap <C-A>      <Home>
+cnoremap <C-E>      <End>
+cnoremap <C-K>      <C-U>
