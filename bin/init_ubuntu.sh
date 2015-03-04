@@ -7,7 +7,7 @@ if [ ! -e ~/.oh-my-zsh ]; then
     chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc python-pip ack-grep exuberant-ctags
+apt-get install tmux vim autojump curl ibus-mozc python-pip ack-grep exuberant-ctags ipython ipython-notebook tree
 
 pip install jedi virtualenvwrapper beautifulsoup4
 
