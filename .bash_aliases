@@ -13,7 +13,6 @@ alias ls='ls --color=auto'
 # Personal shortcuts
 alias v="vim"
 alias gpu='aticonfig --pxl | while read SPAM_OUT; do notify-send "$SPAM_OUT"; done'
-alias w="/usr/bin/which"
 alias r="source ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
