@@ -15,6 +15,10 @@ set wildmode=list:longest " make TAB behave like in a shell
 set autoread
 set cursorline
 
+"original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
+"found : https://github.com/tpope/tpope/blob/master/.vimrc
+set grepprg=grep\ -rnH\ --exclude=tags
+
 
 " better copy & paste
 " ====================
