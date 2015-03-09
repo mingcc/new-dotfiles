@@ -13,7 +13,6 @@ set mouse=a
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread
-set cursorline
 
 "original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 "found : https://github.com/tpope/tpope/blob/master/.vimrc
@@ -117,7 +116,7 @@ let delimitMate_expand_cr = 1
 " UltiSnips
 " =========
 " set runtimepath+=~/.vim/ulti_snippets
-let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets"
+let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets/UltiSnips/"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
