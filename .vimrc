@@ -199,3 +199,11 @@ cnoremap <C-K>      <C-U>
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
+
+" NERD_tree config
+"  let NERDTreeChDirMode=2
+"  let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
+"  let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
+"  let NERDTreeShowBookmarks=1
+"  map <F3> :NERDTreeToggle<CR>
+
