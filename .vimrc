@@ -31,7 +31,7 @@ let mapleader = ","
 " Quicksave command 
 noremap <c-z> :update<CR>
 vnoremap <c-z> <C-C>:update<CR>
-inoremap <C-Z> <C-D>:update<CR>
+inoremap <c-z> <C-D>:update<CR>
 
 " Quick quit command
 noremap <Leader>e :q<CR> " Quick current window
@@ -206,4 +206,3 @@ let g:syntastic_check_on_wq = 0
 "  let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 "  let NERDTreeShowBookmarks=1
 "  map <F3> :NERDTreeToggle<CR>
-
