@@ -1,18 +1,25 @@
 #!/usr/bin/env bash
 
+HOME="/home/mingcc"
+
 sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
+# sed -i '13a $HOME/bin/test' /etc/rc.local
 
 if [ ! -e ~/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc python-pip ack-grep exuberant-ctags ipython ipython-notebook tree
+apt-get install tmux vim autojump curl ibus-mozc exuberant-ctags tree
 
 pip install jedi virtualenvwrapper beautifulsoup4
 
-git clone https://github.com/junegunn/fzf ~/.fzf
-https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
+#git clone https://github.com/junegunn/fzf ~/.fzf
+
+install_dropbox() {
+    
+    wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
+}
 
 
 if [ -e /usr/bin/ack-grep ]; then
