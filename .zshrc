@@ -132,3 +132,9 @@ ips () {
     # determine local IP address
     ifconfig | grep "inet " | awk '{ print $2 }'
 }
+
+
+
+function tmuxwindow() {
+    tmux new-window -n $1
+}
