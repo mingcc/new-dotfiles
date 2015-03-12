@@ -1,3 +1,7 @@
+if has('gui_running')
+    set guifont=DejaVu_Sans_Mono:h14
+endif
+
 " Automatic reloading of .vimrc
 " ==============================
 autocmd! bufwritepost .vimrc source %
