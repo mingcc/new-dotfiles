@@ -24,6 +24,8 @@ alias pyexecute='find . -name "*.py" -exec chmod +x {} \;'
 alias subnet='sudo nmap -sP 192.168.1.0/24'
 alias h='history'
 alias sv='sudo /usr/bin/vim'
+alias s="apt-cache search"
+
 
 
 

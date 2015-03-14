@@ -11,12 +11,13 @@ autocmd FileType python nnoremap <Leader>b Oimport ipdb; ipdb.set_trace() # BREA
 
 " General 
 " =========
-set bg=dark
+"set bg=dark
 set encoding=utf-8
 set mouse=a              
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread
+colorscheme wombat
 
 "original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 "found : https://github.com/tpope/tpope/blob/master/.vimrc
