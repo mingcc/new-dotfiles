@@ -136,3 +136,8 @@ ips () {
 function tmuxwindow() {
     tmux new-window -n $1
 }
+
+function tmuxipython() {
+    tmux new-window -n ipython
+    tmux send-keys 'ipython' C-M
+}
