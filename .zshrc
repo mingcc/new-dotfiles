@@ -143,3 +143,6 @@ function tmuxipython() {
 }
 # shorten github url
 git.io() {curl -i -s http://git.io -F "url=$1" | grep "Location" | cut -f 2 -d " "}
+# new added
+zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
+							/usr/sbin /usr/bin
