@@ -26,14 +26,15 @@ alias h='history'
 alias sv='sudo /usr/bin/vim'
 alias s="apt-cache search"
 
+#tmux
+alias ta="tmux attach -t"
+alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 
 
 
 # Git related shortcuts
 alias g="git"
 
-
-alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 
 ## work in progress
 
