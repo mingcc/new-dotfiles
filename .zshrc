@@ -141,3 +141,13 @@ function tmuxipython() {
     tmux new-window -n ipython
     tmux send-keys 'ipython' C-M
 }
+
+function tmuxvirtualenv() {
+    tmux new-session -s pythonvirtualenv -n virtualenv -d
+    tmux send-keys -t pythonvirtualenv 'cd ~/Dropbox/projects' C-m
+    tmux send-keys -t pythonvirtualenv 'workon python27' C-m
+}
+
+function tmuxattach() {
+    tmux attach -t $1
+}
