@@ -40,3 +40,6 @@ alias g="git"
 
 alias emptydirs="find . -empty -type d | wc -l"
 alias currentip="wget -O- checkip.dyndns.org 2>&1 | grep Current"
+
+# python
+alias djangoversion='python -c "import django; print(django.get_version())"'
