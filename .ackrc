@@ -1,1 +1,2 @@
---pager=LESS=FSRX less -r
+--pager=less -r
+--color
