@@ -18,7 +18,7 @@ if [ ! -e ~/.oh-my-zsh ]; then
     chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc exuberant-ctags tree conky 
+apt-get install tmux vim autojump curl ibus-mozc exuberant-ctags tree conky ibus-sunpinyin
 
 pip install jedi virtualenvwrapper beautifulsoup4
 
