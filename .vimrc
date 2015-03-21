@@ -158,9 +158,12 @@ let g:jedi#popup_select_first = 0
 
 
 
-" automatically adding executable bit to bash files
+" automatically adding executable bit to files
 " =================================================
-au BufWritePost *.sh silent !chmod +x <afile> 
+if has('unix')
+    au BufWritePost *.sh silent !chmod +x <afile> 
+    au BufWritePost *.py silent !chmod +x <afile> 
+endif
 
 
 let g:SuperTabDefaultCompletionType = "context"
