@@ -6,6 +6,8 @@ apt-get update && sudo apt-get upgrade
 sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 # sed -i '13a $HOME/bin/test' /etc/rc.local
 
+#gsettings set "org.gnome.gnome-screenshot" "auto-save-directory" "~/Dropbox/"
+#gsettings set org.gnome.desktop.default-applications.terminal exec 'gnome-terminal'
 
 services
 ========
