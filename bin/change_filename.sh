@@ -1,6 +1,9 @@
 #!/bin/sh
 # Description: changes the filename such as,  27079_08_.sh to  instruder.sh.
 
-Filename=`cat $1 | grep '^#Filename' | sed 's/#Filename://g'`
 
-mv $1 $Filename
+for file in $1; do
+    Filename=`cat $file | egrep '(^#Filename|^#Name)' | sed 's/\(#Filename:\|#Name:\)//g'`
+    mv $1 $Filename
+done
+
