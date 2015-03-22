@@ -155,6 +155,10 @@ let g:jedi#popup_select_first = 0
 " autocmd BufRead * setlocal foldmethod=marker
 " autocmd BufRead * normal zM
 
+" Buffer movement
+map <right>  :bnext<cr>
+map <left>  :bprevious<cr>
+
 
 
 
