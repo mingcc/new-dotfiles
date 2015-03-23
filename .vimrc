@@ -1,5 +1,5 @@
 if has('gui_running')
-    set guifont=DejaVu_Sans_Mono:h14
+    set guifont=Monospace\ 10
 endif
 
 " Automatic reloading of .vimrc
@@ -144,8 +144,10 @@ let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 " Settings for jedi-vim
 " =====================
 let g:jedi#usages_command = "<leader>n"
-let g:jedi#popup_on_dot = 1
+let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
+
+map <F5> :pyfile %<cr>
 
 
 
@@ -201,6 +203,7 @@ set tags=./tags
 
 map <Leader>, <esc>:tabprevious<CR>
 map <Leader>. <esc>:tabnext<CR>
+
 
 " Bash like keys for the command line
 cnoremap <C-A>      <Home>
