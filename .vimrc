@@ -1,5 +1,9 @@
 if has('gui_running')
-    set guifont=Monospace\ 10
+    if has('unix')
+        set guifont=Monospace\ 10
+    elseif has('win32')
+        set guifont=Consolas:h11,Courier\ New:h10
+    endif
 endif
 
 " Automatic reloading of .vimrc
