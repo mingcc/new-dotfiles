@@ -21,11 +21,21 @@ alias now='date +"%T"'
 alias nowdate='date +"%d-%m-%Y"'
 alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 alias pyexecute='find . -name "*.py" -exec chmod +x {} \;'
-alias subnet='sudo nmap -sP 192.168.1.0/24'
-alias sv='sudo /usr/bin/vim'
 alias s="apt-cache search"
 alias restartibus='ibus-daemon -drx'
 alias tmppy="cd /tmp; vim test.py"
+
+# sudo
+#
+if [ -e /usr/bin/sudo ] && [ $UID -ne 0 ]; then
+
+alias pdbedit="sudo pdbedit"
+alias useradd="sudo useradd"
+alias userdel="sudo userdel"
+alias sv='sudo /usr/bin/vim'
+alias subnet='sudo nmap -sP 192.168.1.0/24'
+
+fi
 
 #tmux
 alias ta="tmux attach -t"
@@ -41,3 +51,5 @@ alias currentip="wget -O- checkip.dyndns.org 2>&1 | grep Current"
 
 # python
 alias djangoversion='python -c "import django; print(django.get_version())"'
+
+alias h="history | grep \"$1\""
