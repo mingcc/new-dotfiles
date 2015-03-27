@@ -142,7 +142,9 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " =========
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
-let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 1
 
 
 " Settings for jedi-vim
@@ -216,9 +218,6 @@ cnoremap <C-K>      <C-U>
 
 
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 0
 
 " NERD_tree config
 "  let NERDTreeChDirMode=2
