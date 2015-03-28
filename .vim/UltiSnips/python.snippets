@@ -11,6 +11,13 @@ snippet #! "Shebang header for python scripts" b
 $0
 endsnippet
 
+snippet ifmainargparse "argparse inside if main" b
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="${1:description}")
+    parser.add_argument('--url', action="store", dest="url")
+    parser.add_argument('--path', action="store", dest="path")
+    given_args = parser.parse_args()
+endsnippet
 
 
 snippet ifmain "ifmain" b
