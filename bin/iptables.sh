@@ -24,4 +24,7 @@ iptables -A INPUT -i $EXTIF -p udp -s $INNET -m multiport --dport 137,138 -j ACC
 
 # ssd
 iptables -A INPUT -i $EXTIF -p tcp -s $INNET --dport 22 -j ACCEPT
+
+#
+iptables -A INPUT -i $EXTIF -p tcp -s $INNET --dport 631 -j ACCEPT
 #sed '13a /home/$USERNAME/bin/iptables.sh' /etc/rc.local
