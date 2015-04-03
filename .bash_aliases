@@ -52,5 +52,5 @@ alias currentip="wget -O- checkip.dyndns.org 2>&1 | grep Current"
 # python
 alias djangoversion='python -c "import django; print(django.get_version())"'
 
-alias h="history | grep \"$1\""
 alias turnoffscreen="xset dpms force off"
+alias h='history | grep'
