@@ -10,7 +10,7 @@
     s = status -sb
     ci = commit
 [core]
-	excludesfile = /home/jason/.gitignore
+	excludesfile = ~/.gitignore
 	pager = less
 [pager]
 	status = true
