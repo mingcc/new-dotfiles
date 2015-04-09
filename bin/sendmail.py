@@ -3,15 +3,13 @@ import argparse
 
 def send_mail(fromaddr, to):
 
-    fromaddr = fromaddr
-    toaddrs  = to
     msg = 'Why,Oh why!'
     username = 'lm90311@gmail.com'
     password = 'mtuujfmgcjnqxgrw'
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login(username,password)
-    server.sendmail(fromaddr, toaddrs, msg)
+    server.sendmail(fromaddr, to, msg)
     server.quit()
 
 if __name__ == '__main__':
