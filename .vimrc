@@ -12,6 +12,7 @@ autocmd! bufwritepost .vimrc source %
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python nnoremap <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+autocmd FileType sh,zsh,csh,tcsh        inoremap <silent> <buffer> <Leader>! #!/bin/<C-R>=&ft<CR>
 
 " General 
 " =========
@@ -131,11 +132,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
-" Fixing the copy & paste madness
-" ================================
-" vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
-" nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
-" imap <C-v> <Esc><C-v>a
 
 
 " Syntastic
