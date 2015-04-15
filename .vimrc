@@ -12,7 +12,7 @@ autocmd! bufwritepost .vimrc source %
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python nnoremap <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-autocmd FileType sh,zsh,csh,tcsh        inoremap <silent> <buffer> <Leader>! #!/bin/<C-R>=&ft<CR>
+autocmd FileType sh,zsh        inoremap <silent> <buffer> <Leader>! #!/bin/<C-R>=&ft<CR>
 
 " General 
 " =========
