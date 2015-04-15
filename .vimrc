@@ -199,9 +199,7 @@ set completeopt=longest,menuone
 
 
 
-nnoremap <silent> <F9> :TagbarToggle<CR>
 
-set tags=./tags
 
 map <Leader>, <esc>:tabprevious<CR>
 map <Leader>. <esc>:tabnext<CR>
