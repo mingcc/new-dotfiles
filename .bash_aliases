@@ -54,4 +54,3 @@ alias djangoversion='python -c "import django; print(django.get_version())"'
 
 alias turnoffscreen="xset dpms force off"
 alias h='history | grep'
-find . -type d -name '*pycache*' -delete
