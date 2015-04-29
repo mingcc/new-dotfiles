@@ -17,9 +17,9 @@ if [ ! -e ~/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
-sudo apt-get install zsh tmux vim autojump ibus-mozc ibus-sunpinyin
+sudo apt-get install python-pip zsh tmux vim autojump ibus-mozc ibus-sunpinyin
 
-pip install jedi virtualenvwrapper beautifulsoup4
+sudo pip install jedi virtualenvwrapper beautifulsoup4
 
 #git clone https://github.com/junegunn/fzf ~/.fzf
 
