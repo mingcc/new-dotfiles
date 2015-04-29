@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-apt-get update && sudo apt-get upgrade
+#apt-get update && sudo apt-get upgrade
 
 sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 # sed -i '13a $HOME/bin/test' /etc/rc.local
@@ -11,23 +11,22 @@ sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 
 services
 ========
-update-rc.d bluetooth stop
+#update-rc.d bluetooth stop
 
 if [ ! -e ~/.oh-my-zsh ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-    chsh -s /bin/zsh
 fi
 
-apt-get install tmux vim autojump curl ibus-mozc exuberant-ctags tree conky ibus-sunpinyin
+sudo apt-get install zsh tmux vim autojump ibus-mozc ibus-sunpinyin
 
 pip install jedi virtualenvwrapper beautifulsoup4
 
 #git clone https://github.com/junegunn/fzf ~/.fzf
 
-install_dropbox() {
+#install_dropbox() {
     
-    wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
-}
+#    wget -O dropbox.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.02.12_amd64.deb
+#}
 
 
 if [ -e /usr/bin/ack-grep ]; then
