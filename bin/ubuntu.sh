@@ -2,7 +2,8 @@
 
 
 #apt-get update && sudo apt-get upgrade
-
+#disable online search in Dash
+gsettings set com.canonical.Unity.Lenses remote-content-search ‘none’ 
 sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 # sed -i '13a $HOME/bin/test' /etc/rc.local
 
