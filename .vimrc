@@ -22,7 +22,7 @@ set mouse=a
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread
-colorscheme wombat
+"colorscheme wombat
 
 "original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 "found : https://github.com/tpope/tpope/blob/master/.vimrc
