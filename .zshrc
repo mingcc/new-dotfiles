@@ -86,6 +86,7 @@ export TERM=xterm-256color
 export EDITOR='vim'
 export HISTFILE=~/.histfile
 
+
 ANDROID_HOME="/opt/android-sdk-linux/"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:~/.fzf/bin/
 
@@ -141,3 +142,10 @@ function tmuxipython() {
     tmux new-window -n ipython
     tmux send-keys 'ipython' C-M
 }
+
+
+
+# configure for fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
