@@ -29,6 +29,7 @@ alias tmppy="cd /tmp; vim test.py"
 #
 if [ -e /usr/bin/sudo ] && [ $UID -ne 0 ]; then
 
+alias update-upgrade="sudo apt-get update && sudo apt-get upgrade"
 alias pdbedit="sudo pdbedit"
 alias useradd="sudo useradd"
 alias userdel="sudo userdel"
