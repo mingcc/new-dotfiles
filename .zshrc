@@ -95,7 +95,7 @@ export LS_COLORS
 
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
-export VIRTUALENV_PYTHON=/usr/bin/python3.4
+#export VIRTUALENV_PYTHON=/usr/bin/python3.4
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
@@ -142,10 +142,3 @@ function tmuxipython() {
     tmux new-window -n ipython
     tmux send-keys 'ipython' C-M
 }
-
-
-
-# configure for fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="@im=fcitx"

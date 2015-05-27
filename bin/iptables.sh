@@ -22,8 +22,8 @@ iptables -A INPUT -i $EXTIF -p tcp -s $INNET -m multiport --dport 139,445 -j ACC
 
 iptables -A INPUT -i $EXTIF -p udp -s $INNET -m multiport --dport 137,138 -j ACCEPT
 
-# ssd
-iptables -A INPUT -i $EXTIF -p tcp -s $INNET --dport 22 -j ACCEPT
+# ssd , web server
+iptables -A INPUT -i $EXTIF -p tcp -s $INNET -m multiport --dport 80,22 -j ACCEPT
 
 #
 iptables -A INPUT -i $EXTIF -p tcp -s $INNET --dport 631 -j ACCEPT

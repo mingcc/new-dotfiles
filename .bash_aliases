@@ -23,7 +23,6 @@ alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 alias pyexecute='find . -name "*.py" -exec chmod +x {} \;'
 alias s="apt-cache search"
 alias restartibus='ibus-daemon -drx'
-alias tmppy="cd /tmp; vim test.py"
 
 # sudo
 #
@@ -50,7 +49,7 @@ alias tmuxkillall="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}
 alias emptydirs="find . -empty -type d | wc -l"
 alias currentip="wget -O- checkip.dyndns.org 2>&1 | sed 's/.*<body>\(.*\)<\/body>.*/\1/'"
 
-# python
+# django
 alias djangoversion='python -c "import django; print(django.get_version())"'
 
 alias turnoffscreen="xset dpms force off"

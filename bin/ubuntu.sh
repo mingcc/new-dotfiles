@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-
+sudo sysctl vm.swappiness=10
 #apt-get update && sudo apt-get upgrade
 #disable online search in Dash
 gsettings set com.canonical.Unity.Lenses remote-content-search ‘none’ 
