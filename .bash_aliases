@@ -24,6 +24,8 @@ alias pyexecute='find . -name "*.py" -exec chmod +x {} \;'
 alias s="apt-cache search"
 alias restartibus='ibus-daemon -drx'
 alias tmppy="cd /tmp; vim test.py"
+alias mkvirtualenv='mkvirtualenv -p `which python3`'
+alias mkvenv2='mkvirtualenv -p `which python2`'
 
 # sudo
 #
