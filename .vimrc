@@ -146,7 +146,6 @@ let g:syntastic_check_on_wq = 1
 " Settings for jedi-vim
 " =====================
 let g:jedi#usages_command = "<leader>n"
-let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 
 map <F5> :pyfile %<cr>
@@ -229,17 +228,6 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
 
-
-
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 "" GitGutter settings
 let g:gitgutter_sign_added = '++'
