@@ -23,6 +23,8 @@ alias pycclean='find . -name "*.pyc" -exec rm {} \;'
 alias pyexecute='find . -name "*.py" -exec chmod +x {} \;'
 alias s="apt-cache search"
 alias restartibus='ibus-daemon -drx'
+alias mkvirtualenv='mkvirtualenv -p `which python3`'
+alias mkvenv2='mkvirtualenv -p `which python2`'
 
 # sudo
 #
