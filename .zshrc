@@ -95,7 +95,6 @@ export LS_COLORS
 
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
-#export VIRTUALENV_PYTHON=/usr/bin/python3.4
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 

@@ -146,7 +146,7 @@ let g:syntastic_check_on_wq = 1
 " Settings for jedi-vim
 " =====================
 let g:jedi#usages_command = "<leader>n"
-let g:jedi#popup_select_first = 0
+let g:jedi#popup_select_first = 1
 
 map <F5> :pyfile %<cr>
 
@@ -248,3 +248,10 @@ let g:gitgutter_sign_removed = 'rr'
 "     execfile(activate_this, dict(__file__=activate_this))
 " EOF
 " endif
+
+
+
+let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
+let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+let g:ycm_complete_in_comments = 1 " Completion in comments
+let g:ycm_complete_in_strings = 1 " Completion in string
