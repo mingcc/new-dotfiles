@@ -125,9 +125,7 @@ let delimitMate_expand_cr = 1
 
 " UltiSnips
 " =========
-" set runtimepath+=~/.vim/ulti_snippets
-let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips/"
-let g:UltiSnipsSnippetDirectories = ['UltiSnips']
+"let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
@@ -145,10 +143,11 @@ let g:syntastic_check_on_wq = 1
 
 " Settings for jedi-vim
 " =====================
+
+set completeopt=longest,menuone
 let g:jedi#usages_command = "<leader>n"
 let g:jedi#popup_select_first = 1
 
-map <F5> :pyfile %<cr>
 
 
 
@@ -186,18 +185,6 @@ map <c-h> <c-w>h
 
 map gf :edit <cfile><CR>
 
-" easier to move around in insert mode
-inoremap <c-h> <left>
-inoremap <c-l> <right>
-
-
-
-
-set completeopt=longest,menuone
-
-
-
-
 
 
 map <Leader>, <esc>:tabprevious<CR>
@@ -205,13 +192,6 @@ map <Leader>. <esc>:tabnext<CR>
 
 
 
-
-" NERD_tree config
-"  let NERDTreeChDirMode=2
-"  let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
-"  let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
-"  let NERDTreeShowBookmarks=1
-"  map <F3> :NERDTreeToggle<CR>
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
@@ -227,27 +207,6 @@ vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
-
-
-"" GitGutter settings
-let g:gitgutter_sign_added = '++'
-let g:gitgutter_sign_removed = 'rr'
-
-
-
-" Add the virtualenv's site-packages to vim path
-" if has('python')
-" py << EOF
-" import os.path
-" import sys
-" import vim
-" if 'VIRTUAL_ENV' in os.environ:
-"     project_base_dir = os.environ['VIRTUAL_ENV']
-"     sys.path.insert(0, project_base_dir)
-"     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"     execfile(activate_this, dict(__file__=activate_this))
-" EOF
-" endif
 
 
 
