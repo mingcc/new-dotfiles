@@ -22,6 +22,7 @@ set mouse=a
 set bs=2                
 set wildmode=list:longest " make TAB behave like in a shell
 set autoread
+set wildignore+=*.pyc
 colorscheme wombat
 
 "original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
@@ -125,7 +126,7 @@ let delimitMate_expand_cr = 1
 
 " UltiSnips
 " =========
-"let g:UltiSnipsSnippetDirectories = ['UltiSnips']
+let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets/UltiSnips"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
@@ -207,10 +208,3 @@ vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
-
-
-
-let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
-let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
-let g:ycm_complete_in_comments = 1 " Completion in comments
-let g:ycm_complete_in_strings = 1 " Completion in string
