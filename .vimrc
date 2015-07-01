@@ -12,7 +12,6 @@ autocmd! bufwritepost .vimrc source %
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType python nnoremap <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-autocmd FileType sh,zsh        inoremap <silent> <buffer> <Leader>! #!/bin/<C-R>=&ft<CR>
 
 " General 
 " =========
@@ -87,14 +86,10 @@ call pathogen#helptags()
 
 
 " settings for powerline
-" cd ~/.vim/bundle
-" git clone https://github.com/Lokaltog/vim-powerline
 set laststatus=2
 
 " settings for ctrlp
-" cd ~/.vim/bundle
-" git clone https://github.com/kien/ctrlp.vim
-"let g:ctrip_max_height = 30
+let g:ctrlp_working_path_mode = ''
 
 
 
@@ -110,14 +105,6 @@ highlight PmenuSel ctermbg=15 guibg=white
 
 
 
-
-
-" Show most plugin keybinding
-noremap <silent><Leader>? :map <Leader><CR>
-
-
-
-
 " DelimitMate
 let delimitMate_expand_cr = 1
 
@@ -127,9 +114,10 @@ let delimitMate_expand_cr = 1
 " UltiSnips
 " =========
 let g:UltiSnipsSnippetsDir = "~/.vim/bundle/vim-snippets/UltiSnips"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger       = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger  = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
+let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
 
 
 
@@ -145,22 +133,13 @@ let g:syntastic_check_on_wq = 1
 " Settings for jedi-vim
 " =====================
 
-set completeopt=longest,menuone
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#popup_select_first = 1
-
-
-
-
-
-" Close all folds when opening a new buffer
-" zR to open all folds
-" autocmd BufRead * setlocal foldmethod=marker
-" autocmd BufRead * normal zM
-
-" Buffer movement
-map <right>  :bnext<cr>
-map <left>  :bprevious<cr>
+" set completeopt=longest,menuone
+" let g:jedi#usages_command = "<leader>n"
+let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 0
+"
+" Youcomplete plugin
+let g:ycm_autoclose_preview_window_after_completion=1
 
 
 
@@ -173,8 +152,6 @@ if has('unix')
 endif
 
 
-let g:SuperTabDefaultCompletionType = "context"
-
 
 " Movement
 " =========
@@ -183,9 +160,6 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-
-map gf :edit <cfile><CR>
-
 
 
 map <Leader>, <esc>:tabprevious<CR>
@@ -208,3 +182,4 @@ vmap <C-y> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 imap <C-v> <Esc><C-v>a
 
+inoremap <C-c> <CR><Esc>O
