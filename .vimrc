@@ -24,6 +24,10 @@ set autoread
 set wildignore+=*.pyc
 colorscheme wombat
 
+" map sudo to w!! in command line
+cmap w!! %!sudo tee > /dev/null %
+
+
 "original: set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude=tags
 "found : https://github.com/tpope/tpope/blob/master/.vimrc
 set grepprg=grep\ -rnH\ --exclude=tags
