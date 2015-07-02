@@ -23,6 +23,8 @@ set wildmode=list:longest " make TAB behave like in a shell
 set autoread
 set wildignore+=*.pyc
 colorscheme wombat
+map! jj <ESC>
+
 
 " map sudo to w!! in command line
 cmap w!! %!sudo tee > /dev/null %
@@ -94,6 +96,7 @@ set laststatus=2
 
 " settings for ctrlp
 let g:ctrlp_working_path_mode = ''
+noremap <Leader>b :CtrlPBuffer<CR>
 
 
 
